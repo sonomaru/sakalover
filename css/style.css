@@ -1,13 +1,8 @@
 @charset "UTF-8";
-
-html,
-body {
-    min-height: 100vh;
+.wrap {
+    overflow: hidden;
 }
-body {
-    display: flex;
-    flex-direction: column;
-    }
+
 html {
     font-size: 100%;
 }
@@ -17,7 +12,7 @@ a {
 body{
     font-family: 'Yu Mincho Light','YuMincho','Yu Mincho','游明朝体','ヒラギノ明朝 ProN','Hiragino Mincho ProN',sans-serif;
     font-size: 0.9rem;
-    line-height: 1.7;
+    line-height: 1.2;
     background-color:#400e32 ;
     color: #fff;
 }
@@ -236,7 +231,6 @@ list-style-type: disc
     padding: 10px 0;
     text-align: center;
     color: #fff;
-    margin-top: auto;
 }
 
 /*--------------------------
