@@ -28,15 +28,25 @@ li {
 .flex{
     display: flex;
 }
+.white{
+    background-color: #fff;
+    color: black;
+}
+
 .item-title {
     font-size: 2.5rem;
     display: inline-block;
     border-bottom: solid 2px #F2AD28;
     margin-bottom: 70px;
     }
-.white{
-    background-color: #fff;
-    color: black;
+
+h3{
+    font-size: 1.5rem;
+    padding-bottom: 30px;
+}
+h4{
+    font-size: 1.2rem;
+    padding-bottom: 20px;
 }
 /*--------------------------
 ヘッダー
@@ -83,8 +93,24 @@ li {
     }
     
 .btn-gradient-radius:hover {
-        background-image: linear-gradient(45deg, #F2AD28 0%, #f76a35 100%);
+        background-image: linear-gradient(45deg, #F2921D 0%, #f76a35 50%);
     }
+    
+.btn-cta {
+        display: inline-block;
+        font-size: 1.5rem;
+        padding: 7px 30px;
+        border-radius: 25px;
+        text-decoration: none;
+        color: #FFF;
+        background-image: linear-gradient(45deg, #A61F69 0%, #400E32 100%);
+        transition: .4s;
+    }
+    
+.btn-cta:hover {
+        background-image: linear-gradient(45deg, #400E32 0%, #642e55 50%);
+    }
+
 /*--------------------------
 About
 ---------------------------*/
@@ -115,34 +141,61 @@ margin-right: 20px;
     background-color: #fff;
     color: #232323;
     width: 30%;
+    padding-top: 20px;
     margin-right: 20px;
-    margin-bottom: 50px;
+    margin: 30px auto 0px auto;
 }
 #benefit .box p{
     padding:30px 40px;
+}
+#benefit .box:first-child{
+    margin-left: 0px;
+}
+#benefit .box:nth-child(4){
+    margin-left: 0;
 }
 #benefit .box:nth-child(3n){
     margin-right: 0px;
 }
 
+#benefit .box:nth-child(-n+3){
+    margin-top: 0px;
+}
 #benefit img{
     width: 100%;
 }
 
 
-
-
-
-h3{
-    font-size: 1.5rem;
-    padding-bottom: 30px;
-}
-h4{
-    font-size: 1.2rem;
-    padding-bottom: 20px;
-}
+/*--------------------------
+#CTA
+---------------------------*/
 .cta{
-    background-color: #F2AD28;
+    background-color: #F3A000;
+}
+.cta-img{
+    width: 50%;
+    padding-top: 20px;
+}
+.cta-application{
+    width: 50%;
+    margin: 0px 0px 0px 50px;
+    padding: 50px 0px;
+    font-size: 1.2rem;
+    border: solid 3px #fff;/*線*/
+    border-radius: 10px;/*角の丸み*/
+}
+.cta-application span{
+    font-size: 2rem;
+}
+.cta-application ul{
+    padding: 20px 60px;
+    text-align: left;  
+}
+.cta-application ul li{
+list-style-type: disc
+}
+.cta-application a{
+    margin-top: 30px;
 }
 #footer{
     background-color:#232323 ;
