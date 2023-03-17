@@ -354,6 +354,11 @@ list-style-type: disc
     }
 }
 @media screen and (max-width: 599px){
+    #header {
+
+        min-height: 80vh;
+    } 
+    /* 文字サイズ指定 */   
     .item-title {
         font-size: 1.8rem;
         display: inline-block;
@@ -366,14 +371,23 @@ list-style-type: disc
         border-bottom: solid 2px #400e32;
         margin-bottom: 50px;
     }
+    
+    #header .header-p{
+        font-size: 1rem;
+        padding-bottom: 20px;
+    }
+    #header p{
+        font-size: 0.9rem;
+    }
     h3{
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         padding-bottom: 30px;
     }
     h4{
         font-size: 1rem;
         padding-bottom: 20px;
     }
+    /* ヘッダー */
     .site-title{
         position: absolute;
         width: 50%;
@@ -384,6 +398,7 @@ list-style-type: disc
     .site-title img{
         width: 100%;
     }
+
     .button{
         position: absolute;
         width: 50%;
