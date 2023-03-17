@@ -1,9 +1,13 @@
 @charset "UTF-8";
 
-* {
-    margin: 0;
-    padding: 0;
+html,
+body {
+    min-height: 100vh;
 }
+body {
+    display: flex;
+    flex-direction: column;
+    }
 html {
     font-size: 100%;
 }
@@ -232,6 +236,7 @@ list-style-type: disc
     padding: 10px 0;
     text-align: center;
     color: #fff;
+    margin-top: auto;
 }
 
 /*--------------------------
