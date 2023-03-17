@@ -265,7 +265,7 @@ list-style-type: disc
         width: 50%;
         right: 50%;
         top: 50%;
-        transform: translate(50%,180%);
+        transform: translate(50%,220%);
     }
 
 
@@ -405,10 +405,11 @@ list-style-type: disc
     }
 
     .button{
+        padding-top: 20px;
         position: absolute;
         width: 50%;
         right: 50%;
         top: 50%;
-        transform: translate(50%,150%);
+        transform: translate(50%,180%);
     }
 }
