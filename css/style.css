@@ -21,7 +21,7 @@ li {
     }
 .wrapper {
         max-width: 960px;
-        padding: 90px 16px 150px 16px;
+        padding: 40px 16px 50px 16px;
         margin: 0 auto;
         text-align: center;
     }
@@ -58,42 +58,39 @@ h4{
 ヘッダー
 ---------------------------*/
 #header {
-        max-width: 100%;
+        width: 100%;
         min-height: 100vh;
         background-image: url("../img/mainvisual.jpg");
         background-size: cover;
         background-position: center top;
         background-repeat: no-repeat;
-        padding: 20px 40px;
-        position: relative;
+        /* padding: 20px 40px; */
+    }    
+
+.top{
+    position: relative;
+    height: 900px;
     }
-#header .top{ 
-        height: 500px;
-        position: relative;
-        align-items: center;
-        top: 30px;
-        left: 0;
-    }
-#header .title{
-    width: 45%;
-    position: absolute;
-    top: 120px;
-    left: 210px;
-}
-#header .title img{
-    width: 45%;
-}
+
 .site-title{
+    position: absolute;
+    width: 55%;
+    top: 0;
+    left: 0;
+    left: 35%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.site-title img{
     width: 100%;
 }
 .button{
-    width: 50%;
-    height: auto;
-    padding: 10px 10px 10px 0px;
-    text-align: center;
-    position: relative;
-    top: 10px;
-    right: 20px;
+    position: absolute;
+    width: 40%;
+    /* padding: 100px 8% 100px 6%; */
+    right: 25%;
+    top: 50%;
+    transform: translate(70%,-10%);
 }
 #header .header-p{
     font-size: 1.2rem;
@@ -102,7 +99,6 @@ h4{
 #header p{
     font-size: 1.1rem;
 }
-
 /*--------------------------
 申込ボタンデザイン
 ---------------------------*/
