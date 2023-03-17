@@ -37,22 +37,28 @@ li {
     font-size: 2.5rem;
     display: inline-block;
     border-bottom: solid 2px #F2AD28;
-    margin-bottom: 70px;
+    margin-bottom: 50px;
     }
-
+.cta-title{
+    font-size: 2.5rem;
+    display: inline-block;
+    border-bottom: solid 2px #400e32;
+    margin-bottom: 50px;
+}
+    
 h3{
     font-size: 1.5rem;
     padding-bottom: 30px;
 }
 h4{
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     padding-bottom: 20px;
 }
 /*--------------------------
 ヘッダー
 ---------------------------*/
 #header {
-        width: 100%;
+        max-width: 100%;
         min-height: 100vh;
         background-image: url("../img/mainvisual.jpg");
         background-size: cover;
@@ -61,30 +67,51 @@ h4{
         padding: 20px 40px;
         position: relative;
     }
-.top{
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
+#header .top{ 
+        height: 500px;
+        position: relative;
+        align-items: center;
+        top: 30px;
+        left: 0;
     }
+#header .title{
+    width: 45%;
+    position: absolute;
+    top: 120px;
+    left: 210px;
+}
+#header .title img{
+    width: 45%;
+}
 .site-title{
-    width: 60%;
+    width: 100%;
 }
 .button{
-    width: 40%;
-    padding: 80px 50px 0px 20px;
+    width: 50%;
+    height: auto;
+    padding: 10px 10px 10px 0px;
     text-align: center;
+    position: relative;
+    top: 10px;
+    right: 20px;
+}
+#header .header-p{
+    font-size: 1.2rem;
+    padding-bottom: 20px;
+}
+#header p{
+    font-size: 1.1rem;
 }
 
 /*--------------------------
 申込ボタンデザイン
 ---------------------------*/
 .btn-gradient-radius {
+        max-width:100% ;
+        margin-top: 30px;
         display: inline-block;
-        font-size: 1.5rem;
-        padding: 7px 30px;
+        font-size: 1.0rem;
+        padding: 7px 20px;
         border-radius: 25px;
         text-decoration: none;
         color: #FFF;
@@ -97,6 +124,7 @@ h4{
     }
     
 .btn-cta {
+        max-width:70%;
         display: inline-block;
         font-size: 1.5rem;
         padding: 7px 30px;
@@ -117,14 +145,18 @@ About
 .about .img{
     width: 40%;
 }
-#recommend .item{
-width:25%;
-margin-right: 20px;
-}
 .text{
     width: 60%;
     padding: 80px 8% 100px 6%;
 }
+/*--------------------------
+#こんな方におすすめ
+---------------------------*/
+#recommend .item{
+width:25%;
+margin-right: 20px;
+}
+
 #recommend .item:last-child{
     margin-right: 0px;
 }
@@ -142,7 +174,6 @@ margin-right: 20px;
     color: #232323;
     width: 30%;
     padding-top: 20px;
-    margin-right: 20px;
     margin: 30px auto 0px auto;
 }
 #benefit .box p{
@@ -203,4 +234,124 @@ list-style-type: disc
     padding: 10px 0;
     text-align: center;
     color: #fff;
+}
+
+/*--------------------------
+メディアクエリ
+---------------------------*/
+@media screen and (max-width: 1000px){
+
+    .top{
+        flex-direction: column;
+    }
+    #header .top{ 
+        height: auto;
+        position: static;
+        flex-direction: column;
+    }
+
+    #header .title{
+        width: 100%;
+        position: static;
+        margin: 0 auto;
+        padding: 30px 30px;
+    }
+    .site-title{
+        width: 70%;
+    }
+    .button{
+        width: 80%;
+        height: auto;
+        padding: 10px 10px 10px 10px;
+        text-align: center;
+        position: static;
+    }
+
+/*申込ボタンデザイン*/
+.btn-gradient-radius {
+    width:120% ;
+    }
+
+/*about*/
+.info{
+    flex-direction: column;
+}
+    .about .img{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .text{
+        width: 100%;
+        padding: 30px 8% 100px 6%;
+    }
+/*こんな方におすすめ*/
+    .items{
+        flex-direction: column;
+    }
+    #recommend .item{
+        width:100%;
+        padding: 0px 30px;
+        margin-right: 0px;
+        font-size: 1.2rem;
+        }
+    #recommend img{
+        padding: 10px;
+        width:30%;
+        }
+    .item h4{
+        font-size: 1.5rem;
+    }
+    /* サカラバPremiumでできること */
+    .bonus{
+        flex-direction: column;
+    }
+    #benefit .box{
+        width: 100%;
+        margin-bottom: 20px;
+        margin: 30px auto 0px auto;
+    }
+    #benefit .box p{
+        padding:30px 40px;
+        font-size: 1.5rem;
+    }
+    #benefit .box:nth-child(-n+3){
+        margin-top: 30px;
+    }
+    #benefit .box:first-child{
+        margin-top: 0px;
+    }
+    #benefit img{
+        width: 70%;
+    }
+
+    /* CTA */
+    .cta-bottom{
+        flex-direction: column;
+    }
+    .cta-img{
+        width: 40%;
+        padding-top: 0;
+        margin: 0px auto 50px auto;
+    }
+    .cta-application{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .cta-application ul{
+        padding: 20px 10px;
+        text-align: center;  
+    }
+    .cta-application ul li{
+        list-style-type: none;
+        }
+    .cta-application a{
+        margin-top: 30px;
+    }
+    #footer{
+        background-color:#232323 ;
+        font-size: 0.5rem;
+        padding: 10px 0;
+        text-align: center;
+        color: #fff;
+    }
 }
