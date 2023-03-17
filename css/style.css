@@ -204,7 +204,7 @@ margin-bottom: 50px;
 .cta-application{
     width: 50%;
     margin: 0px 0px 0px 50px;
-    padding: 50px 0px;
+    padding: 50px 10px;
     font-size: 1.2rem;
     border: solid 3px #fff;/*線*/
     border-radius: 10px;/*角の丸み*/
@@ -295,7 +295,7 @@ list-style-type: disc
         }
     #recommend img{
         padding: 10px;
-        width:50%;
+        width:60%;
         }
     .item h4{
         font-size: 1.5rem;
@@ -382,6 +382,9 @@ list-style-type: disc
     h4{
         font-size: 0.8rem;
         padding-bottom: 20px;
+    }
+    #benefit .box p{
+        font-size: 1rem;
     }
     /* ヘッダー */
     .site-title{
